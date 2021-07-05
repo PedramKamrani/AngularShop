@@ -1,0 +1,15 @@
+D:\CodeAngular\shop\AngularShop\DataLayer\bin\Debug\net5.0\DataLayer.deps.json
+D:\CodeAngular\shop\AngularShop\DataLayer\bin\Debug\net5.0\DataLayer.runtimeconfig.json
+D:\CodeAngular\shop\AngularShop\DataLayer\bin\Debug\net5.0\DataLayer.runtimeconfig.dev.json
+D:\CodeAngular\shop\AngularShop\DataLayer\bin\Debug\net5.0\DataLayer.dll
+D:\CodeAngular\shop\AngularShop\DataLayer\bin\Debug\net5.0\ref\DataLayer.dll
+D:\CodeAngular\shop\AngularShop\DataLayer\bin\Debug\net5.0\DataLayer.pdb
+D:\CodeAngular\shop\AngularShop\DataLayer\obj\Debug\net5.0\DataLayer.csprojAssemblyReference.cache
+D:\CodeAngular\shop\AngularShop\DataLayer\obj\Debug\net5.0\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\CodeAngular\shop\AngularShop\DataLayer\obj\Debug\net5.0\DataLayer.AssemblyInfoInputs.cache
+D:\CodeAngular\shop\AngularShop\DataLayer\obj\Debug\net5.0\DataLayer.AssemblyInfo.cs
+D:\CodeAngular\shop\AngularShop\DataLayer\obj\Debug\net5.0\DataLayer.csproj.CoreCompileInputs.cache
+D:\CodeAngular\shop\AngularShop\DataLayer\obj\Debug\net5.0\DataLayer.dll
+D:\CodeAngular\shop\AngularShop\DataLayer\obj\Debug\net5.0\ref\DataLayer.dll
+D:\CodeAngular\shop\AngularShop\DataLayer\obj\Debug\net5.0\DataLayer.pdb
+D:\CodeAngular\shop\AngularShop\DataLayer\obj\Debug\net5.0\DataLayer.genruntimeconfig.cache

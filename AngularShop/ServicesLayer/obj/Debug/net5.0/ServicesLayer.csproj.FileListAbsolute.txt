@@ -1,0 +1,15 @@
+D:\CodeAngular\shop\AngularShop\ServicesLayer\bin\Debug\net5.0\ServicesLayer.deps.json
+D:\CodeAngular\shop\AngularShop\ServicesLayer\bin\Debug\net5.0\ServicesLayer.dll
+D:\CodeAngular\shop\AngularShop\ServicesLayer\bin\Debug\net5.0\ref\ServicesLayer.dll
+D:\CodeAngular\shop\AngularShop\ServicesLayer\bin\Debug\net5.0\ServicesLayer.pdb
+D:\CodeAngular\shop\AngularShop\ServicesLayer\bin\Debug\net5.0\DataLayer.dll
+D:\CodeAngular\shop\AngularShop\ServicesLayer\bin\Debug\net5.0\DataLayer.pdb
+D:\CodeAngular\shop\AngularShop\ServicesLayer\obj\Debug\net5.0\ServicesLayer.csprojAssemblyReference.cache
+D:\CodeAngular\shop\AngularShop\ServicesLayer\obj\Debug\net5.0\ServicesLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\CodeAngular\shop\AngularShop\ServicesLayer\obj\Debug\net5.0\ServicesLayer.AssemblyInfoInputs.cache
+D:\CodeAngular\shop\AngularShop\ServicesLayer\obj\Debug\net5.0\ServicesLayer.AssemblyInfo.cs
+D:\CodeAngular\shop\AngularShop\ServicesLayer\obj\Debug\net5.0\ServicesLayer.csproj.CoreCompileInputs.cache
+D:\CodeAngular\shop\AngularShop\ServicesLayer\obj\Debug\net5.0\ServicesLayer.csproj.CopyComplete
+D:\CodeAngular\shop\AngularShop\ServicesLayer\obj\Debug\net5.0\ServicesLayer.dll
+D:\CodeAngular\shop\AngularShop\ServicesLayer\obj\Debug\net5.0\ref\ServicesLayer.dll
+D:\CodeAngular\shop\AngularShop\ServicesLayer\obj\Debug\net5.0\ServicesLayer.pdb
