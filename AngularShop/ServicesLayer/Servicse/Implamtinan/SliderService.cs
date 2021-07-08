@@ -39,13 +39,13 @@ namespace ServicesLayer.Servicse.Implamtinan
     public async Task AddSlider(Slider slider)
     {
       await _sliderRepository.AddEntity(slider);
-      await _sliderRepository.SaveChanges();
+       _sliderRepository.SaveChanges();
     }
 
     public async Task UpdateSlider(Slider slider)
     {
       _sliderRepository.UpdateEntity(slider);
-      await _sliderRepository.SaveChanges();
+       _sliderRepository.SaveChanges();
     }
 
     public async Task<Slider> GetSliderById(long sliderId)

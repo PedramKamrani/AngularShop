@@ -12,10 +12,16 @@ import { NewProductsComponent } from './Pages/home/new-products/new-products.com
 import { FavoriteProductsComponent } from './Pages/home/favorite-products/favorite-products.component';
 import { LaestNewsComponent } from './Pages/home/laest-news/laest-news.component';
 import { BrandsComponent } from './Pages/home/brands/brands.component';
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import {SliderService} from './services/slider.service';
 import { ContactUsComponent } from './Pages/contact-us/contact-us.component';
 import { AboutUsComponent } from './Pages/about-us/about-us.component';
+import { ShopInterceptor } from './services/Shopinterceptor';
+import { LoginComponent } from './Pages/login/login.component';
+import { RegisterComponent } from './Pages/register/register.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RegisterService } from './services/register.service';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,15 +35,26 @@ import { AboutUsComponent } from './Pages/about-us/about-us.component';
     LaestNewsComponent,
     BrandsComponent,
     ContactUsComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AppRoutingModule 
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    SweetAlert2Module.forRoot()
   ],
-  providers: [SliderService],
+  providers: [SliderService,
+    RegisterService,
+  {
+    provide:HTTP_INTERCEPTORS,
+   useClass:ShopInterceptor,
+    multi:true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

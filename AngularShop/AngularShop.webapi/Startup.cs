@@ -1,4 +1,5 @@
 using DataLayer.Repository;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -10,6 +11,9 @@ using ServicesLayer.Servicse.Implamtinan;
 using ServicesLayer.Servicse.Interface;
 using ServicesLayer.Uitelites.Extinsion.Connection;
 using System.IO;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using ServicesLayer.Security;
 
 namespace AngularShop.webapi
 {
@@ -39,9 +43,45 @@ namespace AngularShop.webapi
       #region Services
       services.AddScoped<IUserService,UserService>();
       services.AddScoped<SliderService, SliderService>();
+      services.AddScoped<IPasswordHelper, PasswordHelper>();
       #endregion
       services.AddControllers();
-      
+
+      #region Authentication
+
+      services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+        .AddJwtBearer(option =>
+        {
+          option.TokenValidationParameters = new TokenValidationParameters
+          {
+            ValidateIssuer = true,
+            ValidateAudience = false,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = "https://localhost:44373",
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("AngularshopJwtBearer"))
+          };
+        });
+
+      #endregion
+
+      #region Cors
+
+      services.AddCors(option =>
+      {
+
+        option.AddPolicy("EnableCors", builde =>
+        {
+          builde.AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowAnyOrigin()
+            
+            .Build();
+        });
+      });
+
+      #endregion
+
     }
 
     
@@ -58,6 +98,7 @@ namespace AngularShop.webapi
       app.UseRouting();
 
       app.UseAuthorization();
+      app.UseCors("EnableCors");
 
       app.UseEndpoints(endpoints =>
       {

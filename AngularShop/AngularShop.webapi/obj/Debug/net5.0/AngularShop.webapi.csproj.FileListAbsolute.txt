@@ -62,3 +62,7 @@ D:\CodeAngular\shop\AngularShop\AngularShop.webapi\bin\Debug\net5.0\Microsoft.As
 D:\CodeAngular\shop\AngularShop\AngularShop.webapi\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
 D:\CodeAngular\shop\AngularShop\AngularShop.webapi\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
 D:\CodeAngular\shop\AngularShop\AngularShop.webapi\obj\Debug\net5.0\AngularShop.webapi.MvcApplicationPartsAssemblyInfo.cs
+D:\CodeAngular\shop\AngularShop\AngularShop.webapi\bin\Debug\net5.0\AngleSharp.dll
+D:\CodeAngular\shop\AngularShop\AngularShop.webapi\bin\Debug\net5.0\AngleSharp.Css.dll
+D:\CodeAngular\shop\AngularShop\AngularShop.webapi\bin\Debug\net5.0\HtmlSanitizer.dll
+D:\CodeAngular\shop\AngularShop\AngularShop.webapi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

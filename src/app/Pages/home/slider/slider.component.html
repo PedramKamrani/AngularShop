@@ -6,7 +6,7 @@
       <ul *ngIf="sliders!==null&& sliders.length>0">
 
         <li data-transition="premium-random" data-slotamount="3" *ngFor="let slider of sliders">
-          <img [src]="'http://localhost:4200/assets/images/dummy/slides/1/'+slider.imageName" alt="slider img" width="1400" height="377" />
+          <img [src]="Domain+'/assets/images/dummy/slides/1/'+slider.imageName" [alt]='slider.imageName' width="1400" height="377" />
   
           <!-- baloons -->
           <div class="caption lft ltt"

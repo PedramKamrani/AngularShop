@@ -1,16 +1,23 @@
 using DataLayer.Entites.Account;
+using ServicesLayer.DTOs.Account;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace ServicesLayer.Servicse.Interface
 {
- public interface IUserService : IDisposable
+  public interface IUserService : IDisposable
   {
-   
-      Task<List<User>> GetAllUsers();
-    
+    Task<List<User>> GetAllUsers();
+    Task<RegisterUserResult> RegisterUser(RegisterUserDTO registerUser);
+    bool IsUserExistByEmail(string email);
+
+    #region Login
+
+    Task<LoginUserResult> LoginUser(LoginUserDTO loginUser);
+    Task<User> GetUserByEmail(string email);
+
+
+    #endregion
   }
 }

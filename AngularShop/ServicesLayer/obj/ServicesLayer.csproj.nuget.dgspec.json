@@ -120,6 +120,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "HtmlSanitizer": {
+              "target": "Package",
+              "version": "[5.0.404, )"
+            },
             "Microsoft.AspNetCore.Mvc.Formatters.Json": {
               "target": "Package",
               "version": "[2.2.0, )"
