@@ -111,3 +111,12 @@
   </div>
 </div>
 
+<swal
+  #SweetAlert
+  text="ایمیل  {{ this.RegisterForm.controls.email.value }}تکراری است"
+  title="خطا"
+  icon="info"
+  [showCancelButton]="true"
+  [focusCancel]="true"
+ >
+</swal>

@@ -80,7 +80,11 @@ public class AccountController : SiteController
 
           var tokenString = new JwtSecurityTokenHandler().WriteToken(tokenOptions);
 
-          return JsonResponseStatus.Success(new { token = tokenString, expireTime = 30, firstName = user.FirstName, lastName = user.LastName, userId = user.Id });
+          return JsonResponseStatus.Success(new
+          {
+            token = tokenString, expireTime = 30, firstName = user.FirstName, lastName = user.LastName
+            , userId = user.Id,Address=user.Address
+          });
       }
     }
 
